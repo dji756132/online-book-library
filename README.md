@@ -8,18 +8,18 @@ I. How to run this project.
       c) online-service use WebClient to retrieve data from book-catalog and book-review.
 
 II. How to run a curl command that exercies the endpoint and displays the response.
-  a. create a record of book-catalog.
+  1. create a record of book-catalog.
      curl -d '{"bookCatalogId":1, "title": "Learning Spring Boot 3.0", "author": ["Greg L. Turnquist", "Dave Syer"], year:2022}' \
           -H "Content-Type:application/json" \
           -X POST http://localhost:8081/bookcatalog
      curl -d '{"bookCatalogId":2, "title": "Mastering MongoDB 6.x", "author": "Alex Giamas", year:2022}' \
           -H "Content-Type:application/json" \
           -X POST http://localhost:8081/bookcatalog
-  b. create a recod of book-review.
+  2. create a recod of book-review.
      curl -d '{"bookReviewId":1, "bookCatalogId":1, comment:"privide concept and idea in depth!", "rating":9.0} \
           -H "Content-Type:applicaiton/json" \
           -X POST http://localhost:8082/bookreviews
-  c. retrieve book-catalog and book-review by book-catalog-ID
+  3. retrieve book-catalog and book-review by book-catalog-ID
      curl -i http://localhost:8083/onlinservices/1
 
 III. Overview of this project
