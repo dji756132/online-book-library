@@ -15,10 +15,12 @@ II. How to run a curl command that exercies the endpoint and displays the respon
      curl -d '{"bookCatalogId":2, "title": "Mastering MongoDB 6.x", "author": "Alex Giamas", year:2022}' \
           -H "Content-Type:application/json" \
           -X POST http://localhost:8081/bookcatalog
+     
   2. create a recod of book-review.
      curl -d '{"bookReviewId":1, "bookCatalogId":1, comment:"privide concept and idea in depth!", "rating":9.0} \
           -H "Content-Type:applicaiton/json" \
           -X POST http://localhost:8082/bookreviews
+     
   3. retrieve book-catalog and book-review by book-catalog-ID
      curl -i http://localhost:8083/onlinservices/1
 
