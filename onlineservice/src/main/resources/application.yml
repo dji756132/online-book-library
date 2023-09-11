@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: local
+server:
+  port: 8083
+restClient:
+  bookCatalogUrl: http://localhost:8081/bookcatalog
+  bookReviewsUrl: http://localhost:8082/bookreviews
